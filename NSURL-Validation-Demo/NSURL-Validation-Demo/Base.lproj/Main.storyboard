@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rzd-0J-DAp">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--NSURL Validation Extension Demo-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="NSURL_Validation_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.69999999999999996" contentMode="center" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="MAr-Cw-qdl">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ybq-eX-piT">
+                                <rect key="frame" x="16" y="136" width="568" height="444"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter A URL" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="o6Z-Yw-Dn4">
+                                <rect key="frame" x="16" y="98" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.52696407218267405" green="0.68456012696324386" blue="0.86239469051361084" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="MAr-Cw-qdl" secondAttribute="trailing" id="1Zz-aT-ayW"/>
+                            <constraint firstAttribute="bottom" secondItem="ybq-eX-piT" secondAttribute="bottom" constant="20" symbolic="YES" id="E3C-CY-gmd"/>
+                            <constraint firstItem="MAr-Cw-qdl" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="OXS-tc-vZ7"/>
+                            <constraint firstItem="MAr-Cw-qdl" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="WHt-0V-e93"/>
+                            <constraint firstItem="o6Z-Yw-Dn4" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="XRO-tJ-4tZ"/>
+                            <constraint firstItem="MAr-Cw-qdl" firstAttribute="centerX" secondItem="ybq-eX-piT" secondAttribute="centerX" id="dFt-gn-XIn"/>
+                            <constraint firstItem="ybq-eX-piT" firstAttribute="trailing" secondItem="o6Z-Yw-Dn4" secondAttribute="trailing" id="nAl-fk-mtZ"/>
+                            <constraint firstItem="ybq-eX-piT" firstAttribute="top" secondItem="o6Z-Yw-Dn4" secondAttribute="bottom" constant="8" symbolic="YES" id="rLv-B8-NME"/>
+                            <constraint firstItem="MAr-Cw-qdl" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="tjb-96-FaS"/>
+                            <constraint firstItem="ybq-eX-piT" firstAttribute="leading" secondItem="o6Z-Yw-Dn4" secondAttribute="leading" id="uCZ-Sl-7va"/>
+                            <constraint firstItem="o6Z-Yw-Dn4" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="34" id="vR7-eR-LwL"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="36e-66-qw0" appends="YES" id="UXx-0L-r79"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="NSURL Validation Extension Demo" id="4EW-RU-Al2"/>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="MAr-Cw-qdl" id="awQ-BV-yBz"/>
+                        <outlet property="textField" destination="o6Z-Yw-Dn4" id="8to-xx-sxH"/>
+                        <outlet property="webView" destination="ybq-eX-piT" id="jJG-Es-3Iy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="36e-66-qw0">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="vXZ-lx-hvc" id="wCb-zd-Eqm"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1024" y="-405"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Tb5-wx-eYy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rzd-0J-DAp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8gX-Nc-tNN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="9qx-Pa-cec"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gWc-i5-SDX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="302" y="-405"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="729" height="729"/>
+    </resources>
+</document>
