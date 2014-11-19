@@ -5,6 +5,6 @@ NSURL-Validation-Extension
 This extension is a method to properly validate a NSURL as being both correct in format and an accessible url.
 
 ## Screenshots
-![alt tag](https://github.com/jhickman7/NSURL-Validation-Extension/Screenshots/Launch.png)
-![alt tag](https://github.com/jhickman7/NSURL-Validation-Extension/Screenshots/Root.png)
-![alt tag](https://github.com/jhickman7/NSURL-Validation-Extension/Screenshots/Valid-Url.png)
+![alt tag](/Screenshots/Launch.png)
+![alt tag](/Screenshots/Root.png)
+![alt tag](/Screenshots/Valid-Url.png)
