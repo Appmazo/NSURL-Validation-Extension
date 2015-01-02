@@ -15,6 +15,8 @@
 		1A397D791A1C08C400702123 /* NSURL_Validation_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A397D781A1C08C400702123 /* NSURL_Validation_DemoTests.swift */; };
 		1A397D831A1C08DD00702123 /* NSURL-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A397D821A1C08DD00702123 /* NSURL-Extensions.swift */; };
 		1A397D841A1C08DD00702123 /* NSURL-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A397D821A1C08DD00702123 /* NSURL-Extensions.swift */; };
+		1A3F10B01A1E669D005C9CC6 /* NSURL+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3F10AF1A1E669D005C9CC6 /* NSURL+Preview.swift */; };
+		1A3F10B11A1E669D005C9CC6 /* NSURL+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3F10AF1A1E669D005C9CC6 /* NSURL+Preview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,7 @@
 		1A397D771A1C08C400702123 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A397D781A1C08C400702123 /* NSURL_Validation_DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSURL_Validation_DemoTests.swift; sourceTree = "<group>"; };
 		1A397D821A1C08DD00702123 /* NSURL-Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSURL-Extensions.swift"; sourceTree = "<group>"; };
+		1A3F10AF1A1E669D005C9CC6 /* NSURL+Preview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSURL+Preview.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,13 +83,14 @@
 		1A397D5F1A1C08C400702123 /* NSURL-Validation-Demo */ = {
 			isa = PBXGroup;
 			children = (
+				1A3F10AF1A1E669D005C9CC6 /* NSURL+Preview.swift */,
+				1A397D821A1C08DD00702123 /* NSURL-Extensions.swift */,
 				1A397D621A1C08C400702123 /* AppDelegate.swift */,
 				1A397D641A1C08C400702123 /* ViewController.swift */,
 				1A397D661A1C08C400702123 /* Main.storyboard */,
 				1A397D691A1C08C400702123 /* Images.xcassets */,
 				1A397D6B1A1C08C400702123 /* LaunchScreen.xib */,
 				1A397D601A1C08C400702123 /* Supporting Files */,
-				1A397D821A1C08DD00702123 /* NSURL-Extensions.swift */,
 			);
 			path = "NSURL-Validation-Demo";
 			sourceTree = "<group>";
@@ -219,6 +223,7 @@
 				1A397D651A1C08C400702123 /* ViewController.swift in Sources */,
 				1A397D631A1C08C400702123 /* AppDelegate.swift in Sources */,
 				1A397D831A1C08DD00702123 /* NSURL-Extensions.swift in Sources */,
+				1A3F10B01A1E669D005C9CC6 /* NSURL+Preview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A397D841A1C08DD00702123 /* NSURL-Extensions.swift in Sources */,
+				1A3F10B11A1E669D005C9CC6 /* NSURL+Preview.swift in Sources */,
 				1A397D791A1C08C400702123 /* NSURL_Validation_DemoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +417,7 @@
 				1A397D7E1A1C08C400702123 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1A397D7F1A1C08C400702123 /* Build configuration list for PBXNativeTarget "NSURL-Validation-DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +426,7 @@
 				1A397D811A1C08C400702123 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
